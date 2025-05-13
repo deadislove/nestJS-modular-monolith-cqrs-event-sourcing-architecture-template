@@ -17,6 +17,8 @@ export class LoginHandler implements ICommandHandler<LoginCommand> {
 
         const user = await this.userService.findByUsername(name)
 
+        // If email value has hash, you should use the auth service to validate user. (Optional)
+        //const user = await this.authService.validateUser(name, email)
         // optional
         // if(!user || !(await bcrypt.compare(email, user.email))) {
         //     throw new UnauthorizedException('Invalid credentials')

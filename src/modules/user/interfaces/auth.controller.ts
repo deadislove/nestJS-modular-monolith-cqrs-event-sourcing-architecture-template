@@ -1,8 +1,9 @@
-import { Body, Controller, Post } from "@nestjs/common";
+import { Body, Controller, Post, UseGuards } from "@nestjs/common";
 import { CommandBus, QueryBus } from "@nestjs/cqrs";
-import { LoginDto } from "../application/dtos";
-import { LoginCommand, LogoutCommand } from "../application/commands";
+import { LoginDto, RegisterDto } from "../application/dtos";
+import { LoginCommand, LogoutCommand, RegisterUserCommand } from "../application/commands";
 import { User } from "@common/decorators/user.decorator";
+import { JwtAuthGuard } from "@common/guards/jwt-auth.guard";
 
 @Controller('auth')
 export class AuthController {
@@ -20,10 +21,20 @@ export class AuthController {
         )
     }
 
+    @UseGuards(JwtAuthGuard)
     @Post('logout')
     async Logout(@User() user:any) {
         return this.commandBus.execute(
-            new LogoutCommand("1")
+            new LogoutCommand(user.UserId)
+        )
+    }
+
+    @Post('register')
+    async Register(
+        @Body() requestModel: RegisterDto
+    ) {
+        return this.commandBus.execute(
+            new RegisterUserCommand(requestModel.name, requestModel.email)
         )
     }
 }

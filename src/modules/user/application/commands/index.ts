@@ -2,6 +2,7 @@ import { CreateUserCommand } from "./create-user.command"
 import { DeleteUserCommand } from "./delete-user.command"
 import { LoginCommand } from "./login.command"
 import { LogoutCommand } from "./logout.command"
+import { RegisterUserCommand } from "./register.command"
 import { UpdateUserCommand } from "./update-user.command"
 
 export {
@@ -10,6 +11,7 @@ export {
     UpdateUserCommand,
     LoginCommand,
     LogoutCommand,
+    RegisterUserCommand,
 }
 
 export default {
@@ -18,4 +20,5 @@ export default {
     UpdateUserCommand,
     LoginCommand,
     LogoutCommand,
+    RegisterUserCommand,
 }
