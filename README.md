@@ -28,6 +28,8 @@
 
 This project demonstrates a modular monolith architecture using [Nest](https://github.com/nestjs/nest), incorporating CQRS and Event Sourcing patterns. It supports dynamic event store providers and adheres to Domain-Driven Design principles, providing a scalable and maintainable foundation for application development.
 
+<a href='https://ko-fi.com/F1F82YR41' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ## 🏗️ Project Structure & Architecture
 
 The application follows a modular monolith approach with clear bounded contexts. Each module encapsulates its domain logic, application services, and infrastructure concerns. The architecture is layered as follows:
