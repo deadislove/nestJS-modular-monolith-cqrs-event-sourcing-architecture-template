@@ -21,8 +21,8 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-![Visitors](https://img.shields.io/badge/visitors-null_total-brightgreen)
-![Clones](https://img.shields.io/badge/clones-null_total_null_unique-blue) <!--CLONE-BADGE-->
+![Visitors](https://img.shields.io/badge/visitors-201_total-brightgreen)
+![Clones](https://img.shields.io/badge/clones-10_total_7_unique-blue) <!--CLONE-BADGE-->
 
 ## 🧭 Project Overview
 
